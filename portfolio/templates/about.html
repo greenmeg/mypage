@@ -1,0 +1,99 @@
+{% extends "templates/base.html" %}
+{% block content %} 
+
+<!-- parallax img of me -->
+
+<!-- header of about me -->
+
+<!-- img of face -->
+
+<!-- paragraph about me-->
+
+<!-- ???connect with me via drop down??? -->
+
+<!-- skill circles -->
+
+<!-- games I'm playing -->
+
+<!-- Section 1 -->
+<section class="module parallax parallax-1">
+</section>
+
+<section class="module content">
+  <div id="aboutp" class="container">
+    <h1 align="center">Researcher. Designer. Gamer.</h1>
+    <br>
+    <p> Nice to meet you! I'm Meg.
+        <br>
+        <br>
+        I am a <b>current Masters student at the <a href="https://www.si.umich.edu/">University of Michigan's School of Information</a></b>, specializing in <b><a href="https://www.si.umich.edu/academics/msi/human-computer-interaction-hci">Human-Computer Interaction</a></b>. My undergraduate degree is from <a href="https://www.msu.edu"/>Michigan State University</a>, where I majored in Chinese and Secondary Education. <b>Working as a teacher</b> has not only given me <b>people-skills necessary for user research</b>, but also the knowledge of <b>educational psychology</b> which gives me insights into design principles.
+        <br>
+        <br>
+        Currently I am fueling my passion by working on multiple game-related projects. This semester I am working with <b>Electronic Arts as a UX Researcher</b>, while working out the details for an upcoming project with Turtle Rock. I always have room on my plate for more gaming experience, so feel free to reach out to me!
+        <br>
+        <br>
+        As a gamer, I am always up for a challenge. I am passionate about expanding my design experiences, aiming to keep an open-mind at all times. There is always something new to learn, and somewhere new to travel, even if it may be virtually.
+        <br>
+        <br>
+        Besides gaming and design, I keep my life active. <b>I practice graphic art and fence sabre regularly.</b> My past experience as a barista has gifted me with an encyclopedic knowledge of coffee, which helps keep me running. I am passionate about people, cats, and the intersection of society and tech.</p>
+  </div>
+</section>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <span class="chart" data-percent="75">
+                    <span class="percent"></span>
+                </span>
+                <h4>Illustrator & Photoshop</h4>
+            </div>
+            <div class="col-md-3">
+                <span class="chart" data-percent="80">
+                    <span class="percent"></span>
+                </span>
+                <h4>CSS & HTML </h4>
+            </div>
+            <div class="col-md-3">
+                <span class="chart" data-percent="95">
+                    <span class="percent"></span>
+                </span>
+                <h4>Wireframe Design </h4>
+            </div>
+            <div class="col-md-3">
+                <span class="chart" data-percent="65">
+                    <span class="percent"></span>
+                </span>
+                <h4>Prototyping</h4>
+            </div>
+
+        </div>
+        <!-- ROW END -->
+    </div>
+    <!-- CONATINER END -->
+
+</section>
+
+
+    <!-- REQUIRED SCRIPTS FILES -->
+    <!-- CORE Illustrator & Photoshop FILE -->
+    <script src="assets/js/Illustrator & Photoshop-1.11.1.js"></script>
+    <!-- REQUIRED BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- REQUIRED SKILL CHART SCRIPTS -->
+    <script src="assets/js/Illustrator & Photoshop.easypiechart.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                },
+                barColor: '#05D6AC', //FORCOLOR OF CHART
+                lineWidth: 10, //WIDTH OF STRIP OF SKILL CHART
+                size: 200, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
+            });
+
+        });
+    </script>
+{%endblock%}

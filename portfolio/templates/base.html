@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meg Portfolio</title>
+
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href = "css/stylinCSS.css" rel="stylesheet">
+
+    <!-- Java -->
+    <link href="css/java.js" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    
+    <!-- navigation -->
+    <nav id ="nav" class="navbar navbar-default navbar-fixed-top">
+      <span>
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="../img/smolmono.png"></a>
+            </div>
+
+            <!--links collected into navigation-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="work.html">Work</a>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Résumé</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+      </span>
+    </nav>
+
+  {% block content %}
+  I should never see this content.  It should be replaced.
+  {% endblock %}
+
+  <!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="navbar-left">
+      <p> ©Copyright 2015 by Meg Green. All Rights Reserved. </p>
+    </div>
+    <div class ="navbar-right">
+      <a href="http://www.linkedin.com/in/greenmeg"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="http://www.twitter.com/grmeg"><i class="fa fa-twitter-square fa-2x"></i></a>
+      <a class="button" href="mailto:grmeg@umich.edu"><i class="fa fa-envelope-square fa-2x"></i></a>
+      <a href="http://steamcommunity.com/id/pyrrhicvictini/"<i class="fa fa-steam-square fa-2x"></i></a>
+    </div>
+  </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
