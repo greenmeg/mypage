@@ -267,15 +267,6 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
-section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 section.module.parallax-1 {
   background-image: url("http://i68.tinypic.com/9lj1q1.jpg"); /*url used because Nishan & I couldn't figure out why local host wasn't pulling up the picture*/
 }
@@ -289,6 +280,12 @@ section.module.parallax-1 {
   section.module.parallax h1 {
     font-size: 160px;
   }
+}
+
+/*games I'm playing*/
+
+.thumb {
+    margin-bottom: 30px;
 }
 
 /* Skills */

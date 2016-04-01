@@ -1,6 +1,9 @@
 {% extends "templates/base.html" %}
 {% block content %} 
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="photo-gallery.js"></script>
+
 <!-- parallax img of me -->
 
 <!-- header of about me -->
@@ -16,23 +19,16 @@
 <!-- games I'm playing -->
 
 <!-- Section 1 -->
+
+<body class="about">
 <section class="module parallax parallax-1">
 </section>
 
-<body class="about">
 <section class="module content">
-<div class="overlay">
-    <!-- overylay class usage -->
-    <div class="container">
-        <div class="overlay-text">
-            <h1>Researcher. Designer. Gamer.</h1>
-        </div>
-    </div>
-</div>
-</section>
   <div id="aboutp" class="container">
+    <h1 align="center">Researcher. Designer. Gamer.</h1>
     <br>
-    <p> <h2>Nice to meet you! I'm Meg.</h2>
+    <p> Nice to meet you! I'm Meg.
         <br>
         <br>
         I am a <b>current Masters student at the <a href="https://www.si.umich.edu/">University of Michigan's School of Information</a></b>, specializing in <b><a href="https://www.si.umich.edu/academics/msi/human-computer-interaction-hci">Human-Computer Interaction</a></b>. My undergraduate degree is from <a href="https://www.msu.edu"/>Michigan State University</a>, where I majored in Chinese and Secondary Education. <b>Working as a teacher</b> has not only given me <b>people-skills necessary for user research</b>, but also the knowledge of <b>educational psychology</b> which gives me insights into design principles.
@@ -54,8 +50,40 @@
     <li><span class="bar mario"></span><h3>Mario Kart</h3></li>
     <li><span class="bar cat"></span><h3>Felinology</h3></li>
     <li><span class="bar fencing"></span><h3>Fencing</h3></li>
-</ul>
-  
+</ul>  
+</div>
+
+<!-- games -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Games I'm playing</h2>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#">
+                <img class="img-responsive" src="static/img/splatoon.png" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#">
+                <img class="img-responsive" src="static/img/tomb.png" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#">
+                <img class="img-responsive" src="static/img/dragonage.png" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#">
+                <img class="img-responsive" src="static/img/destiny.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+</section>
 </body>
 
     <!-- REQUIRED SCRIPTS FILES -->
