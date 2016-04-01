@@ -25,7 +25,7 @@ body {
 .navbar {min-height:28px !important;
 } 
 /*general navbar styling*/
-.navbar-trans {
+.navbar-default {
     padding: 15px;
     text-align: center;
     width: 100%;
@@ -35,9 +35,10 @@ body {
     background-color: #fff
 }
 
-/*hover state over navbar*/
-.navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-  background-color:#f2f2f2;
+/*hover state over navbar highlighting pages*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #b2b2b2;
+    color: #fff;
 }
 
 /* highlight individual pages when active */
@@ -101,7 +102,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #727272;
+    color: #783b5d;
 }
 
 .centered {
@@ -134,7 +135,7 @@ a.active {
 }
 
 #welcome h2 {
-  color: #59cab6;
+  color: #5FD8C3;
   font-weight: 400;
 }
 
@@ -291,5 +292,161 @@ section.module.parallax-1 {
 }
 
 /* Skills */
-.progress {background: #f2f2f2; border-radius: 6px; height: 28px;}
-.progress-bar-custom {background: #59cab6;}
+.bar-main-container {
+  margin: 10px auto;
+  width: 300px;
+  height: 50px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #FFF;
+}
+
+.wrap { padding: 8px; }
+
+.bar-percentage {
+  float: left;
+  background: rgba(0,0,0,0.13);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 9px 0px;
+  width: 18%;
+  height: 16px;
+}
+
+.bar-container {
+  float: right;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 10px;
+  background: rgba(0,0,0,0.13);
+  width: 78%;
+  margin: 12px 0px;
+  overflow: hidden;
+}
+
+.bar {
+  float: left;
+  background: #FFF;
+  height: 100%;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0px 0px 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+/* COLOR */
+.green   { background: #5FD8C3; }
+
+/*progress bars*/
+
+#skill { 
+  list-style: none;
+  width: 296px;
+  margin: 50px auto 0;
+  position: relative;
+  line-height: 2em;
+  padding: 30px 0;
+}
+
+#skill li { 
+  margin-bottom:50px; 
+  background:#e9e5e2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+  background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+  height:20px; 
+  border-radius:10px; 
+  -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;   
+  -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;  
+  box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;   
+}
+
+#skill li h3 { 
+  position:relative; 
+  top:-25px;
+}
+
+.bar { 
+  height:18px; 
+  margin:1px 2px;  
+  position:absolute;
+  border-radius:10px;
+  -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+  -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;  
+  box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;   
+}
+
+.coffee {
+  width:90%; 
+  -moz-animation:coffee 2s ease-out;
+  -webkit-animation:coffee 2s ease-out;
+  background-color: #f674a4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
+  background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -ms-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -o-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: linear-gradient(top, #5FD8C3, #5FD8C3);
+}
+
+.mario {
+  width:80%;
+  -moz-animation:mario 2s ease-out;
+  -webkit-animation:mario 2s ease-out;
+  background-color: #f0bb4b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
+  background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -ms-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -o-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: linear-gradient(top, #5FD8C3, #5FD8C3);
+}
+
+.cat {
+  width:55%;
+  -moz-animation:cat 2s ease-out;
+  -webkit-animation:cat 2s ease-out;
+  background-color: #5FD8C3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
+  background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -ms-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -o-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: linear-gradient(top, #5FD8C3, #5FD8C3);
+}
+
+.fencing {
+  width: 70%;
+  -moz-animation:fencing 2s ease-out;
+  -webkit-animation:fencing 2s ease-out;
+  background-color: #66b3cc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
+  background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -ms-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: -o-linear-gradient(top, #5FD8C3, #5FD8C3);
+  background-image: linear-gradient(top, #5FD8C3, #5FD8C3);
+}
+
+/* animation for progress bars*/
+@-moz-keyframes coffee {0%  { width:0px;} 100%{ width:100%;}  }
+@-moz-keyframes mario        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes cat      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes fencing   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes coffee       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes mario        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes cat      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes fencing   { 0%  { width:0px;} 100%{ width:80%;}  }
