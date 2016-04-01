@@ -187,7 +187,7 @@ a.active {
 
 /* images */
 .grid img {
-    padding: 20px;
+    padding: 40px;
     -webkit-transition: all .3s ease; /* Safari and Chrome */
     -moz-transition: all .3s ease; /* Firefox */
     -o-transition: all .3s ease; /* IE 9 */
@@ -201,8 +201,6 @@ a.active {
     -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */
     -moz-transform:scale(1.15); /* Firefox */
     -ms-transform:scale(1.15); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.15); /* Opera */
-    transform:translatZ(0) scale(1.15);
 }
 
 /* about */
@@ -231,16 +229,13 @@ a.active {
   background:#fff;
 }
 
-/* ============================================================
-  PRIMARY STRUCTURE
-============================================================ */
+/* parallax stuff */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
-/* ============================================================
-  SECTIONS
-============================================================ */
+
 section.module:last-child {
   margin-bottom: 0;
 }
@@ -283,11 +278,9 @@ section.module.parallax-1 {
 }
 
 /*games I'm playing lightbox*/
-#lightbox-container-image-data-box {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
+#gametitle {text-align: center;}
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
  
 /** page structure **/
 #w {

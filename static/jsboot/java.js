@@ -1,13 +1,7 @@
-$(function() {
-  $('a[@rel*=lightbox]').lightBox({
-    overlayBgColor: '#FFF',
-    overlayOpacity: 0.6,
-    imageLoading: 'http://example.com/images/loading.gif',
-    imageBtnClose: 'http://example.com/images/close.gif',
-    imageBtnPrev: 'http://example.com/images/prev.gif',
-    imageBtnNext: 'http://example.com/images/next.gif',
-    containerResizeSpeed: 350,
-    txtImage: 'Imagem',
-    txtOf: 'de'
-   });
+$('.thumbnail').click(function(){
+    $('.modal-body').empty();
+    var title = $(this).parent('a').attr("title");
+    $('.modal-title').html(title);
+    $($(this).parents('div').html()).appendTo('.modal-body');
+    $('#myModal').modal({show:true});
 });
