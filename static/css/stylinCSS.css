@@ -41,12 +41,9 @@ body {
 }
 
 /* highlight individual pages when active */
-body#work a#worknav,
-body#about a#aboutnav,
-body#resume a#resumenav,
-body#contact a#workcontact {
+body.work a.work, body.about a.about, body.resume a.resume, body.contact a.contact {
 color: #fff;
-background: #727272;
+background-color: #727272;
 }
 
 @media(min-width:768px) {
