@@ -1,18 +1,13 @@
-$('.bar-percentage[data-percentage]').each(function () {
-  var progress = $(this);
-  var percentage = Math.ceil($(this).attr('data-percentage'));
-  $({countNum: 0}).animate({countNum: percentage}, {
-    duration: 2000,
-    easing:'linear',
-    step: function() {
-      // What to do on every count
-    var pct = '';
-    if(percentage == 0){
-      pct = Math.floor(this.countNum) + '%';
-    }else{
-      pct = Math.floor(this.countNum+1) + '%';
-    }
-    progress.text(pct) && progress.siblings().children().css('width',pct);
-    }
-  });
+$(function() {
+  $('a[@rel*=lightbox]').lightBox({
+    overlayBgColor: '#FFF',
+    overlayOpacity: 0.6,
+    imageLoading: 'http://example.com/images/loading.gif',
+    imageBtnClose: 'http://example.com/images/close.gif',
+    imageBtnPrev: 'http://example.com/images/prev.gif',
+    imageBtnNext: 'http://example.com/images/next.gif',
+    containerResizeSpeed: 350,
+    txtImage: 'Imagem',
+    txtOf: 'de'
+   });
 });
