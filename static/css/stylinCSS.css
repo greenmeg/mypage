@@ -277,10 +277,33 @@ section.module.parallax-1 {
   }
 }
 
-/*games I'm playing lightbox*/
-#gametitle {text-align: center;}
-.modal-dialog {width:600px;}
-.thumbnail {margin-bottom:6px;}
+/*games I'm playing */
+
+#skillheader{
+  text-align: center;
+}
+
+#gamesheader{
+  text-align: center;
+}
+
+
+#portfolio .row{
+  margin:0px
+  padding: 10px;
+}
+
+#portfolio .col-xs-3{
+  padding:10px;
+}
+
+#portfolio .thumbnail{
+  border:0px;
+  border-radius:0px;
+  margin:0px;
+  padding:10px;
+}
+
  
 /** page structure **/
 #w {
