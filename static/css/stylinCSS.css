@@ -414,7 +414,6 @@ section.module.parallax-1 {
   width:90%; 
   -moz-animation:coffee 2s ease-out;
   -webkit-animation:coffee 2s ease-out;
-  background-color: #f674a4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
   background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
   background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
@@ -427,7 +426,6 @@ section.module.parallax-1 {
   width:80%;
   -moz-animation:mario 2s ease-out;
   -webkit-animation:mario 2s ease-out;
-  background-color: #f0bb4b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
   background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
   background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
@@ -440,7 +438,6 @@ section.module.parallax-1 {
   width:55%;
   -moz-animation:cat 2s ease-out;
   -webkit-animation:cat 2s ease-out;
-  background-color: #5FD8C3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
   background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
   background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
@@ -453,7 +450,6 @@ section.module.parallax-1 {
   width: 70%;
   -moz-animation:fencing 2s ease-out;
   -webkit-animation:fencing 2s ease-out;
-  background-color: #66b3cc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5FD8C3), to(#5FD8C3));
   background-image: -webkit-linear-gradient(top, #5FD8C3, #5FD8C3);
   background-image: -moz-linear-gradient(top, #5FD8C3, #5FD8C3);
@@ -463,11 +459,11 @@ section.module.parallax-1 {
 }
 
 /* animation for progress bars*/
-@-moz-keyframes coffee {0%  { width:0px;} 100%{ width:100%;}  }
-@-moz-keyframes mario        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-moz-keyframes cat      { 0%  { width:0px;} 100%{ width:65%;}  }
-@-moz-keyframes fencing   { 0%  { width:0px;} 100%{ width:80%;}  }
-@-webkit-keyframes coffee       { 0%  { width:0px;} 100%{ width:100%;}  }
-@-webkit-keyframes mario        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-webkit-keyframes cat      { 0%  { width:0px;} 100%{ width:65%;}  }
-@-webkit-keyframes fencing   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes coffee {0%  { width:0px;} 90%{ width:100%;}  }
+@-moz-keyframes mario        { 0%  { width:0px;} 80%{ width:90%;}  }
+@-moz-keyframes cat      { 0%  { width:0px;} 55%{ width:65%;}  }
+@-moz-keyframes fencing   { 0%  { width:0px;} 70%{ width:80%;}  }
+@-webkit-keyframes coffee       { 0%  { width:0px;} 90%{ width:100%;}  }
+@-webkit-keyframes mario        { 0%  { width:0px;} 80%{ width:90%;}  }
+@-webkit-keyframes cat      { 0%  { width:0px;} 55%{ width:65%;}  }
+@-webkit-keyframes fencing   { 0%  { width:0px;} 70%{ width:80%;}  }
