@@ -13,6 +13,10 @@ body {
     overflow-x: hidden; 
 }
 
+body.contact {
+    padding-top: 100px;
+}
+
 /* navigation */
 
 /*makes sure the navbar is small & not distorted by brand logo*/
@@ -483,3 +487,10 @@ section.module.parallax-1 {
 @-webkit-keyframes mario        { 0%  { width:0px;} 80%{ width:90%;}  }
 @-webkit-keyframes cat      { 0%  { width:0px;} 55%{ width:65%;}  }
 @-webkit-keyframes fencing   { 0%  { width:0px;} 70%{ width:80%;}  }
+
+/*contact submit button*/
+
+.btn-lg{
+  background-color: #5FD8C3;
+  border-color: #5FD8C3;
+}

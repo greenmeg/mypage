@@ -17,9 +17,16 @@ class IndexHandler(webapp2.RequestHandler):
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/about.html')
-        self.response.write(template.render({'title': 'FAMILY'}))
+        self.response.write(template.render({'title': 'ABOUT'}))
+
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+        self.response.write(template.render({'title': 'CONTACT'}))
+
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
     ('/about.html', AboutHandler),
+    ('/contact.html', ContactHandler),
 ], debug=True)
