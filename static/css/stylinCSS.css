@@ -1,14 +1,13 @@
 /* FONTS */
-@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,300,700,900);
 
 /* overall */
 
 body {
     background-color: #f2f2f2;
-    font-family: "Dosis";
-    font-weight: 200;
-    font-size: 16px;
+    font-family: "Open Sans Condensed";
     color: #555;
     overflow-x: hidden; 
 }
@@ -17,7 +16,16 @@ body.contact {
     padding-top: 100px;
 }
 
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px !important;
+}
+
 /* navigation */
+.navbar a{
+  font-family: "Lato", sans-serif;
+}
 
 /*makes sure the navbar is small & not distorted by brand logo*/
 .navbar-nav > li > a, .navbar-brand {
@@ -26,15 +34,16 @@ body.contact {
     height: 28px;
 }
 
-.navbar {min-height:28px !important;
+.navbar {
+  min-height:28px !important;
 } 
+
 /*general navbar styling*/
 .navbar-default {
     padding: 15px;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    font-family: "Lato", sans-serif;
     font-size: 14px;
     background-color: #fff
 }
@@ -98,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* paragraphs */
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
@@ -111,6 +120,14 @@ p.small {
     margin: auto;
 }
 
+/* padding between bootstrap columns */
+
+.addPad { 
+  padding-left: 0px;
+  padding-right: 0;
+  padding-top: 25px; 
+}
+
 /* links */
 a,
 a:hover,
@@ -119,7 +136,7 @@ a:active,
 a.active {
     outline: 0;
     color: #5FD8C3;
-    font-family: "Lato";
+    font-family: "Open Sans Condensed";
 }
 
 .centered {
@@ -258,7 +275,7 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Dosis", serif;
+  font-family: "Open Sans Condensed", serif;
   font-size: 30px;
 }
 section.module p {
@@ -520,15 +537,15 @@ section.module.parallax-1 {
 
 /*work page*/
 
-#work{
+#origin{
   padding-top: 100px;
 }
 
-#workheader{
+#originheader{
   color: #5FD8C3;
 }
-#workintro {
-  background-color: #783b5d;
+#originintro {
+  background-color: #f2f2f2;
   padding-top: 70px;
   padding-bottom: 70px;
   margin-bottom: 6px;
@@ -536,4 +553,21 @@ section.module.parallax-1 {
   text-align: center;
   display: block;
 
+}
+
+#originheader {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#originheader h1 {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #783b5d;
+}
+
+#originheader h2 {
+  color: #5FD8C3;
 }
