@@ -1,25 +1,19 @@
 /* FONTS */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,300,700,900);
 
 /* overall */
 
 body {
     background-color: #f2f2f2;
-    font-family: "Open Sans Condensed";
+    font-family: "Source Sans Pro";
+    font-weight: 200;
     color: #555;
     overflow-x: hidden; 
 }
 
 body.contact {
     padding-top: 100px;
-}
-
-ol, ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 16px !important;
 }
 
 /* navigation */
@@ -107,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* paragraphs */
 p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 p.small {
@@ -136,7 +130,7 @@ a:active,
 a.active {
     outline: 0;
     color: #5FD8C3;
-    font-family: "Open Sans Condensed";
+    font-family: "Source Sans Pro";
 }
 
 .centered {
@@ -163,14 +157,16 @@ a.active {
 
 #welcome h1 {
   font-size: 90px;
-  font-weight: 700;
   letter-spacing: 3px;
   color: #783b5d;
 }
 
 #welcome h2 {
   color: #5FD8C3;
-  font-weight: 400;
+}
+
+#intro h2 {
+  color: #5FD8C3;
 }
 
 /* intro */
@@ -187,13 +183,11 @@ a.active {
 
 #intro h3 {
   color: white;
-  font-weight: 400;
   margin-bottom: 35px;
 }
 
 #intro p {
   color: white;
-  font-weight: 400;
   font-size: 20px;
 }
 
@@ -275,13 +269,12 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Open Sans Condensed", serif;
+  font-family: "Source Sans Pro", serif;
   font-size: 30px;
 }
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
-  font-weight: 300;
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -563,7 +556,6 @@ section.module.parallax-1 {
 
 #originheader h1 {
   font-size: 90px;
-  font-weight: 700;
   letter-spacing: 3px;
   color: #783b5d;
 }

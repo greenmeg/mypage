@@ -24,15 +24,38 @@ class ContactHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
         self.response.write(template.render({'title': 'CONTACT'}))
 
-
 class OriginHandler(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/TheOrigin.html')
         self.response.write(template.render({'title': 'The Origin'}))
+
+class MLHHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/MLH.html')
+        self.response.write(template.render({'title': 'Michigan Legal Help'}))
+
+class EASportsHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/EASports.html')
+        self.response.write(template.render({'title': 'EA Sports'}))
+
+class EAXfinityHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/EAXfinity.html')
+        self.response.write(template.render({'title': 'EA Xfinity'}))
+
+class FitBarkHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/FitBark.html')
+        self.response.write(template.render({'title': 'FitBark'}))
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
     ('/about.html', AboutHandler),
     ('/contact.html', ContactHandler),
     ('/TheOrigin.html', OriginHandler),
+    ('/MLH.html', MLHHandler),
+    ('/EASports.html', EASportsHandler),
+    ('/EAXfinity.html', EAXfinityHandler),
+    ('/FitBark.html', FitBarkHandler),
 ], debug=True)
