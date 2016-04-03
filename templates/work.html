@@ -1,34 +1,32 @@
 {% extends "templates/base.html" %}
 {% block content %} 
 
-<body class="work">
-<section id="home">
+<body class="work" id="work">
 
-  <div id="welcome">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 centered">
-            <h1>Meg Green</h1>
-            <h2>UX Research & Design</h2>
-          </div>
-        </div>
-      </div> <!-- /container -->
-  </div><!-- /welcome -->
-
-
-    <div id="intro">
-      <div class="container">
-        <div class="row">
-          <p>
-          I'm a Master's student at the University of Michigan. In my free time I take up gaming research projects.
-          <br>
-          <br>
-          Have a look around, & feel free to contact me if you'd like to start up a project!</p>
-          </div>
-        </div><!-- /container -->
-      </div><!-- /intro -->
-
+<div id="welcome">
   <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <h1>Meg Green</h1>
+        <h2>UX Research & Design</h2>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</div><!-- /welcome -->
+
+  
+<div id="workintro">
+	<div class="container">
+		<div class="row">
+			<h1 align="center" id="workheader">Have a look at my work!</h1>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <div class="container">
     <div class="row centered mt grid">
       <div class="mt"></div>
       <div class="col-lg-4">
@@ -55,7 +53,5 @@
   </div><!-- /container for images -->
 </section>
 
-</body>
-</html>
 
 {%endblock%}

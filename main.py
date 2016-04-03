@@ -25,8 +25,14 @@ class ContactHandler(webapp2.RequestHandler):
         self.response.write(template.render({'title': 'CONTACT'}))
 
 
+class OriginHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/TheOrigin.html')
+        self.response.write(template.render({'title': 'The Origin'}))
+
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
     ('/about.html', AboutHandler),
     ('/contact.html', ContactHandler),
+    ('/TheOrigin.html', OriginHandler),
 ], debug=True)

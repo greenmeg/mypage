@@ -46,9 +46,14 @@ body.contact {
 }
 
 /* highlight individual pages when active */
-body.work a.work, body.about a.about, body.resume a.resume, body.contact a.contact {
+body.work a.work, body.about a.about, body.resume a.resume, body.contact a.contact, body.quiz a.quiz {
 color: #fff;
 background-color: #727272;
+}
+
+/*add padding so I can see origin page content*/
+#origin {
+  padding-top: 100px;
 }
 
 @media(min-width:768px) {
@@ -493,4 +498,42 @@ section.module.parallax-1 {
 .btn-lg{
   background-color: #5FD8C3;
   border-color: #5FD8C3;
+}
+
+/* the origin */
+
+#originpictures ul{
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+
+}
+
+#originpictures ul li{
+  list-style:none;
+  margin-bottom:25px;
+}
+
+#originpictures li img{
+  cursor: pointer;
+}
+
+
+/*work page*/
+
+#work{
+  padding-top: 100px;
+}
+
+#workheader{
+  color: #5FD8C3;
+}
+#workintro {
+  background-color: #783b5d;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  text-align: center;
+  display: block;
+
 }
