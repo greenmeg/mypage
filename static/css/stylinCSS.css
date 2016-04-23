@@ -94,6 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
+h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    color: #783b5d;
+    letter-spacing: 0.5px;
+    text-transform: uppercase !important;
+    font-size: 22px;
+
+}
 #aboutheader{
   padding-top: 30px;
   padding-bottom: 20px;
@@ -130,7 +139,8 @@ a:active,
 a.active {
     outline: 0;
     color: #5FD8C3;
-    font-family: "Source Sans Pro";
+    font-family: "Lato";
+    font-weight: bold;
 }
 
 .centered {
@@ -491,6 +501,8 @@ section.module.parallax-1 {
   cursor: pointer;
 }
 
+/*work page*/
+
 #origin{
   padding-top: 100px;
 }
@@ -524,3 +536,24 @@ section.module.parallax-1 {
 #originheader h2 {
   color: #5FD8C3;
 }
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+/*lightbox*/
+
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
