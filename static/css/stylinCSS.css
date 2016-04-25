@@ -559,4 +559,6 @@ hr {
 .thumbnail {margin-bottom:6px;}
 
 /*need some extra padding above rows*/
-.top-buffer { margin-top:50px; }
+.top-buffer { 
+  margin-top:50px; 
+}
